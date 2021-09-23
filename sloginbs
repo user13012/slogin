@@ -1,0 +1,106 @@
+------SessLogDefaultAspx--------
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    </form>
+</body>
+</html>
+
+---SessLogLoginAspx---
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="lblBen" runat="server" Text="Benutzer: " /><asp:TextBox ID="txtBen" runat="server"></asp:TextBox><br />
+            <asp:Label ID="lblPW" runat="server" Text="Passwort: " /><asp:TextBox ID="txtPW" runat="server" TextMode="Password"></asp:TextBox><br />
+            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
+        </div>
+    </form>
+</body>
+</html>
+
+---SessLogSecureAspx----
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Secure.aspx.cs" Inherits="Secure" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="lblInfo" runat="server"></asp:Label><asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+        </div>
+    </form>
+</body>
+</html>
+
+--------------------
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Maschter.master.cs" Inherits="Maschter" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+    <div style="width:100%; font-size:10em; height: 23%">
+        Häusermarkt
+    </div>
+
+    <div style="width: 28%; float:left; height:1000px;">
+        <p>NAVIGATION</p>
+        <a href="Home.aspx">Home</a><br />
+        <a href="Hausangebote.aspx">Hausangebote</a><br />
+        <a href="Rechner.aspx">Rechner</a>
+    </div>
+
+    <div style="width: 28%; float:right; height:1000px; ">
+        <p>NEWS</p>
+        <p>
+            Bitte schauen Sie...
+        </p>
+    </div>
+    
+    <div>
+        <asp:ContentPlaceHolder id="cphMain" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+</body>
+
+</html>
+
+
