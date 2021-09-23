@@ -1,3 +1,25 @@
+e.NewValues["F_ID_Projekt"] = ((DropDownList)ListView1.Items[e.ItemIndex].FindControl("ddlProjekt")).SelectedValue;
+
+e.Values["F_ID_Projekt"] = ((DropDownList)e.Item.FindControl("ddlProjekt")).SelectedValue;
+
+ _____________________________________________________________________________
+
+
+if (txtBen.Text == "Demo" && txtPasswort.Text == "1234")
+        {
+            Session["LoggedIn"] = "true";
+            Response.Redirect("default.aspx");
+        }
+        else
+        {
+            Response.Redirect("login.aspx");
+            lblWarnung.Text = "Die Anmeldedaten sind flasch";
+
+        }
+        
+ _____________________________________________________________________________
+
+
 ------SessLogDefaultAspx--------
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
