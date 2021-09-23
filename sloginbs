@@ -2,6 +2,11 @@ e.NewValues["F_ID_Projekt"] = ((DropDownList)ListView1.Items[e.ItemIndex].FindCo
 
 e.Values["F_ID_Projekt"] = ((DropDownList)e.Item.FindControl("ddlProjekt")).SelectedValue;
 
+______________________________________________________________________________
+dropdown: item & alternative
+
+select command: nach dem F_ID_Ort ein Komma und klammer auf
+
  _____________________________________________________________________________
 
 
