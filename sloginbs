@@ -1,6 +1,13 @@
+asp.Listview
 e.NewValues["F_ID_Projekt"] = ((DropDownList)ListView1.Items[e.ItemIndex].FindControl("ddlProjekt")).SelectedValue;
+-->Item Updating
 
 e.Values["F_ID_Projekt"] = ((DropDownList)e.Item.FindControl("ddlProjekt")).SelectedValue;
+-->Item Inserting
+
+______________________________________________________________________________
+Ausgabe ddp:
+(SELECT Pr_Name FROM tab_Projekt WHERE ID_Projekt = tab_ToDo.F_ID_Projekt) AS charName,
 
 ______________________________________________________________________________
 dropdown: item & alternative
