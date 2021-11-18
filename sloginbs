@@ -30,7 +30,9 @@ if (txtBen.Text == "Demo" && txtPasswort.Text == "1234")
         }
         
         
-        
+  WICHTIG BEI LOGIN.ASPX BUTTON ONLICK EVENT MACHEN!
+  <asp:Button ID="btnLogin" runat="server" Text="Login" Onclick="btnLogin_Click"/>
+  DANN IF ELSE CODE BEI btnLogin_Click einfügen!
  _____________________________Master__________________________________________
  
  <html>
